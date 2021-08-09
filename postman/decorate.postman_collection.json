@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "1bc615a9-6cdb-45b6-bdf3-6f60c9367a19",
+		"name": "decorate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "活动列表接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/event",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "分类列表接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/cate",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"cate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "文章列表接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/article?cateId=1&rows=4&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"article"
+					],
+					"query": [
+						{
+							"key": "cateId",
+							"value": "1"
+						},
+						{
+							"key": "rows",
+							"value": "4"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "文章详情接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/article/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"article",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "案例列表接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/case?page=1&rows=4",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"case"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "rows",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "案例详情接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/case/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"case",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "企业信息接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/company",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "预约接口",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "吴倩",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "酒店",
+							"type": "text"
+						},
+						{
+							"key": "orderDate",
+							"value": "2021-8-8",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "2222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/order",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
